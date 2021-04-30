@@ -6,10 +6,9 @@ export default async (req: Request, res: Response, next: NextFunction): Promise<
   try {
     const stock = await Stock.findById(req.body.StockId);
     const item = await Item.create({
-      StockId: req.body.StockId,
+      StockId: stock.id,
       name: req.body.name,
     });
-    await stock.addItem(item);
     res.json(item);
   } catch (err) {
     return next(err);
