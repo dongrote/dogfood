@@ -1,6 +1,6 @@
 {
-  "short_name": "Dog Food",
-  "name": "Dog food tracking web app",
+  "short_name": "Inventory",
+  "name": "Inventory tracking web app",
   "icons": [
     {
       "src": "favicon.ico",

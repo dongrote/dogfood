@@ -1,11 +1,11 @@
 import {Grid} from 'semantic-ui-react';
-import DogFoodInventory from '../components/DogFoodInventory';
+import StockView from '../components/StockView';
 
 const Main = () => (
   <Grid columns={1}>
     <Grid.Row>
       <Grid.Column>
-        <DogFoodInventory />
+        <StockView StockId={1} />
       </Grid.Column>
     </Grid.Row>
   </Grid>
